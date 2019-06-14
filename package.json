@@ -1,8 +1,20 @@
 {
-	"name": "svelte-component",
+	"name": "svelte-graph",
+	"description": "Create graphs in Svelte",
 	"svelte": "src/components/components.module.js",
 	"module": "dist/index.mjs",
 	"main": "dist/index.js",
+	"version": "1.0.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Vehmloewff/svelte-graph"
+	},
+	"homepage": "https://github.com/Vehmloewff/svelte-graph",
+	"author": {
+		"name": "Vehmloewff",
+		"email": "emooring@protonmail.com",
+		"url": "https://github.com/Vehmloewff"
+	},
 	"devDependencies": {
 		"eslint": "5.16.0",
 		"eslint-config-prettier": "4.3.0",
