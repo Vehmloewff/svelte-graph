@@ -6,4 +6,7 @@
 
 </style>
 
-<Component />
+<Component 
+	floor={null}
+	height={200}
+/>

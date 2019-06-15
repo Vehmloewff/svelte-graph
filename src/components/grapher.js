@@ -11,7 +11,9 @@ class Grapher {
 		const realSpread = largestNumber - smallestNumber;
 		const multiplier = dreamedSpread / realSpread;
 
-		this.transform = num => num * multiplier + min;
+		this.transform = num => {
+			return num * multiplier + min;
+		}
 	}
 
 	getPositions(positions) {
@@ -19,11 +21,9 @@ class Grapher {
 	}
 
 	flipPositions(positions) {
-		//const range = this.max - this.min;
 		return positions.map(pos => {
 			return this.min + (this.max - pos)
 		});
 	}
-
 }
 module.exports = Grapher;

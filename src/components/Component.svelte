@@ -7,13 +7,13 @@
 	import Grapher from './grapher.js';
 	import flatten from 'array-flatten';
 
-	export let width = 400;
-	export let height = 300;
-	export let points = [{ name: "Actual", data: [ 1, 3, 2, 4, 8 ], bubble: true, color: "#620006", width: 5 }];
+	export let width = 800;
+	export let height = 400;
+	export let points = [{ name: "Actual", data: [ 1, 3, 11, 4, 8 ], bubble: true, color: "#620006", width: 5 }];
 	export let labels = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday' ];
 
-	export let color1 = "#fff7fd";
-	export let color2 = "#fff7fd11";
+	export let color1 = "black";
+	export let color2 = "gray";
 	export let floor = null;
 	export let ceiling = null;
 
@@ -54,7 +54,8 @@
 		for (let lineIndex in points) {
 			lineIndex = Number(lineIndex);
 			let { data, bubble, color, width } = points[lineIndex];
-			data = grapher.flipPositions(grapher.getPositions(data));
+			data = grapher.flipPositions(grapher.getPositions(data)); // expected: 0, 20, 100, 30, 70
+			console.log(data, grapher.flipPositions([50, 70, 150, 80, 120]))
 
 			for (let pointIndex in data) {
 				pointIndex = Number(pointIndex);
