@@ -69,6 +69,6 @@
 		]
 	},
 	"dependencies": {
-		"array-flatten": "^2.1.2"
+		"array-flatten": "^3.0.0"
 	}
 }
